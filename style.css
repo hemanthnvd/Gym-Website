@@ -375,10 +375,10 @@ body {
 }
 /* Mobile devices */
 @media (max-width: 480px) {
-  /* html {
+  html {
     font-size: 20%;
   }
-  body {
+/*   body {
   background-image: url(gym.jpg);
   background-size: 110vw;
   background-repeat: no-repeat;
