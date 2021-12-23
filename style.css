@@ -409,8 +409,8 @@ body {
   .navbar .hamburger {
     order: 1;
     display: inline-block;
-    margin: 1rem 0 0 50vw;
-    padding: 0 0 0 0;
+    margin: 1rem 0 3.8rem 50vw;
+    padding: 0;
   }
   .navbar .section .order {
     background-color: #1b1c1c;
@@ -482,9 +482,12 @@ body {
   }
   .trainers .card p {
     height: 5vh;
+    font-size: 1.5rem;
+    width: 200%;
   }
   .trainers .card1 p {
     height: 5vh;
+    font-size: 1.5rem;
   }
   .trainers .card1 {
     width: 50%;
