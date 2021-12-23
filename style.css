@@ -38,10 +38,28 @@ a {
 }
 .navbar .section a {
   align-items: center;
-  padding: 1.5rem;
+  display: inline-flex;
+  margin: 1.5rem;
   color: #bde0fe;
   font-size: 1.25rem;
   font-weight: 800;
+}
+
+.navbar .hamburger {
+  display: none;
+  margin: 0;
+  padding: 0;
+}
+.navbar .hamburger span {
+  display: block;
+  margin-bottom: 0.2rem;
+  height: 0.5rem;
+  width: 2.5rem;
+  border-radius: 0.15rem;
+  background-color: #bde0fe;
+}
+.navbar .hamburger span :last-child {
+  margin-bottom: 0;
 }
 .navbar .section a:hover {
   color: #89fc00;
@@ -328,6 +346,7 @@ body {
   margin: 3rem 3rem 3rem 0;
 }
 .footer {
+  width: 100%;
   background-color: #90a955;
   padding: 4rem 4rem 1rem 4rem;
 }
@@ -371,30 +390,167 @@ body {
 }
 /* iPads */
 @media (max-width: 768px) {
- 
 }
 /* Mobile devices */
 @media (max-width: 480px) {
   html {
-    font-size: 20%;
+    font-size: 45%;
+    transition: ease-in 0.2s;
   }
-/*   body {
-  background-image: url(gym.jpg);
-  background-size: 110vw;
-  background-repeat: no-repeat;
-  background-color: #6f7c12;
-  background-color: #a3ad38;
-}
-
+  .mainlogo i {
+    font-size: 7rem;
+  }
+  .navbar {
+    display: block;
+  }
+  .navbar .section {
+    display: block;
+  }
+  .navbar .hamburger {
+    order: 1;
+    display: inline-block;
+    margin: 1rem 0 0 0;
+    padding: 0 0 0 50vw;
+  }
+  .navbar .section .order {
+    background-color: #1b1c1c;
+    border-radius: 1rem;
+    order: 2;
+  }
+  .toggle {
+    display: none;
+  }
+  .navbar .section .order a {
+    justify-content: center;
+    text-align: center;
+    padding: 0.1rem;
+    border-bottom: 1px solid #89fc00;
+    display: block;
+  }
+  .matter {
+    padding: 5rem;
+  }
+  .matter h3 {
+    padding-bottom: 10rem;
+  }
+  #aboutmain {
+    clip-path: none;
+    padding: 2rem;
+    margin: 2rem;
+  }
+  .about {
+    padding: 0;
+  }
+  .about p {
+    padding: 0;
+    margin-bottom: 4rem;
+  }
+  .about i {
+    padding-left: 5rem;
+  }
+  .desc {
+    display: block;
+  }
+  .desc .claim {
+    width: 100%;
+    /* text-align: left; */
+  }
+  .desc .claim h1 {
+    /* text-align: left !important; */
+  }
+  .desc .hrs h1 {
+    margin-top: 5rem;
+  }
+  .desc .hrs {
+    width: 100%;
+    border: none;
+    /* text-align: left; */
+  }
+  .trainers {
+    background-color: #a3ad38;
+  }
+  .trainers .card img {
+    width: 100%;
+  }
+  .trainers .card1 img {
+    width: 100%;
+  }
+  .trainers .card {
+    width: 50%;
+    margin: 3rem 0;
+    padding: 0;
+  }
+  .trainers .card p {
+    height: 5vh;
+  }
+  .trainers .card1 p {
+    height: 5vh;
+  }
+  .trainers .card1 {
+    width: 50%;
+    margin: 3rem 0 3rem 50%;
+    padding: 0;
+  }
+  .trainers .abouttrainer {
+    width: 100%;
+  }
+  .abouttrainer p {
+    width: 85vw;
+  }
+  .services .grid .servicecard {
+    /* margin: 0; */
+    width: 90%;
+  }
+  .services .grid .servicecard img {
+    width: 100%;
+    border-radius: 1rem 1rem 0 0;
+  }
+  .services .grid {
+    width: 100%;
+  }
+  .form input {
+    width: 80%;
+  }
+  .desc {
+    padding: 0;
+  }
+  .contact {
+    display: block;
+    background-color: #a3ad38;
+    padding: 5rem 5rem 2rem 5rem;
+  }
+  .contact .form {
+    width: 100%;
+    margin-bottom: 3rem;
+  }
+  .contact .form input {
+    width: 100%;
+  }
+  .contact .map iframe {
+    width: 100%;
+  }
+  .contact .map {
+    width: 100%;
+    border: none;
+    padding: 0;
+  }
+  #ourteam {
+    display: block;
+  }
+  body {
+    background-image: url();
+    background-color: #1b1c1c;
+  }
   .services .grid {
     display: grid;
     grid-template-columns: 1/3fr, 1/3fr, 1/3fr;
   }
   .grid {
     width: 100vw;
-  } */
+  }
+  .footer .footerflex {
+    /* display: block; */
+    /* justify-content: space-around; */
+    width: 100%;
+  }
 }
-
-
-
-
